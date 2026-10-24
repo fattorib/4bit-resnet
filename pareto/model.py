@@ -6,7 +6,7 @@ from typing import cast
 FAKEQUANT = ContextVar("FAKEQUANT", 0)
 
 # (weight_scale, act_scale_max, act_scale_min)
-QUANTS = {"i4": (7, 7, -7),"i8": (127, 127, -127),"u4": (7, 15, 0),"u8": (127, 255, 0)}
+QUANTS = {"i8": (127, 127, -127),"u4": (7, 15, 0),"u8": (127, 255, 0)}
 
 class FakeQuantConv(nn.Conv2d):
     def __init__(
