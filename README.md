@@ -41,3 +41,18 @@ Run the quantized recipe with channel scale of 1.0 across 5 trials:
 ```bash
 SCALE=1.0 TRIALS=5 QUANTIZED=1 WINO=1 JITBEAM=1 DEV=USB+AMD uv run train.py
 ```
+
+
+## Citations
+
+```
+@inproceedings{Abdolrashidi_2021,
+   title={Pareto-Optimal Quantized ResNet Is Mostly 4-bit},
+   url={http://dx.doi.org/10.1109/CVPRW53098.2021.00345},
+   DOI={10.1109/cvprw53098.2021.00345},
+   booktitle={2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+   publisher={IEEE},
+   author={Abdolrashidi, AmirAli and Wang, Lisa and Agrawal, Shivani and Malmaud, Jonathan and Rybakov, Oleg and Leichner, Chas and Lew, Lukasz},
+   year={2021},
+   month=June, pages={3085–3093}}
+```
